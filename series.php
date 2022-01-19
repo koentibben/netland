@@ -45,7 +45,12 @@ function queryFromSeriesTable($column)
     </tr>
     <tr>
         <td><span>Awards</span></td>
-        <td><span><?php $row = queryFromSeriesTable('has_won_awards'); if ($row[0] === 0) { echo "Nee"; } else { echo "Ja"; } ?></span></td>
+        <td><span><?php $row = queryFromSeriesTable('has_won_awards');
+        if ($row[0] === 0) {
+            echo "Nee";
+        } else {
+            echo "Ja";
+        } ?></span></td>
     </tr>
     <tr>
         <td><span>Seasons</span></td>
